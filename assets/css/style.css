@@ -107,7 +107,9 @@ li {
   Header styling starts here
 =================================*/
 header { background-color: #232323; }
+
 .menu ul:last-child { margin-right: 19px; }
+
 .menu .active { border-bottom: 3px solid #ed3e3d; }
 
 header .wrapper {
@@ -186,8 +188,11 @@ header .wrapper {
   products section styling starts here
 =================================*/
 h4::first-letter { text-transform: uppercase; }
+
 .products .wrapper { padding: 93px 0px; }
+
 .product-content div:first-child { margin-bottom: 20px; }
+
 .link { margin-top: 13px; }
 
 .heading {
@@ -202,7 +207,7 @@ h3 {
   font-size: 30px;
 }
 
-.link a{
+.link a {
   position: relative;
   color: #ed3e3d;
   text-transform: uppercase;
@@ -210,7 +215,7 @@ h3 {
   font-size: 12px;
 }
 
-.link a::after{
+.link a::after {
   content: "\f054";
   font-family: fontAwesome;
   float: right;
@@ -222,19 +227,19 @@ h3 {
   bottom: 0;
 }
 
-.all-products{
+.all-products {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.all-products > li{ 
+.all-products > li { 
   width: 31.5%; 
   margin-bottom: 25px;
 }
 
-.product-content div{
+.product-content div {
   display: flex;
   justify-content: space-between;
 }
@@ -253,30 +258,30 @@ h3 {
   color: #ed3e3d;
 }
 
-h4{
+h4 {
   color: #5397c9;
   font-weight: bold;
 }
 
-.product-content{
+.product-content {
   padding: 32px;
   border: 1px solid #ccc;
   border-top: none;
 }
 
-.product-content p{
+.product-content p {
   margin-bottom: 20px;
   color: #7c7c7c;
   font-size: 14px;
   line-height: 22px;
 }
 
-.product-content span{
+.product-content span {
   font-weight: bold;
   color: #232323;
 }
 
-.review{
+.review {
   color: #ed3e3d;
   text-transform: capitalize;
   font-size: 12px;
@@ -287,14 +292,46 @@ h4{
 /*=================================
   about section styling starts here
 =================================*/
+.about-content p a { color: #468af9; }
 
+.about-content p{ margin-bottom: 20px; }
 
+.about-content p a::first-letter{ text-transform: uppercase; }
 
+.title-line { margin-bottom: 20px; }
 
+.about-content li:first-child{ width: 47%; }
 
+.about-content {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.about-content  {
+  margin-bottom: 20px;
+  color: #7c7c7c;
+  font-size: 15px;
+  line-height: 22px;
+}
 
+.list li{
+  margin-bottom: 15px;
+  display: block;
+  color: #7c7c7c;
+  font-size: 14px;
+  list-style-type: square;
+}
 
+.red-button{
+  padding: 8px 16px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  background-color: #ed3e3d;
+  color: #fff;
+}
 /*=================================
   about section styling ends here
 =================================*/
@@ -338,6 +375,12 @@ h4{
   .link a:hover, .review:hover { color: #e69696; }
 
   .all-products li:hover{ box-shadow: 5px 10px 18px #888888; }
+
+  .red-button:hover { background-color: #eb6666; }
+
+  .about-content p a:hover{color: #1d5abd;}
+
+  .about img:hover{ box-shadow: 5px 5px #eb6666;; }
 
 }  
 /*media query for 995px starts here*/

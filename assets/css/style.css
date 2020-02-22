@@ -420,7 +420,6 @@ footer {
   .about-content p a:hover {color: #1d5abd;}
 
   .about img:hover { box-shadow: 5px 5px #eb6666;; }
-
 }  
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {

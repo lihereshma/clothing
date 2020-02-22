@@ -304,7 +304,6 @@ h4 {
 
 .about-content {
   padding-bottom: 50px;
-  border-bottom: 1px solid #ccc;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -338,14 +337,32 @@ h4 {
 /*=================================
   purchase section styling starts here
 =================================*/
+.purchase h4 span{ font-weight: 1000; }
 
+.purchase .wrapper{
+  padding: 50px 0px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
 
+.purchase-content{
+  padding: 3%;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+}
 
+.purchase h4{
+  color: #5397c9;
+  text-transform: capitalize;
+}
 
-
-
-
-
+.purchase p{
+  color: #7c7c7c;
+  font-size: 14px;
+  line-height: 22px;
+}
 /*=================================
   purchase section styling ends here
 =================================*/

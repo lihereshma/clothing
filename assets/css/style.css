@@ -100,17 +100,67 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 84%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+header { background-color: #232323; }
+.menu ul:last-child { margin-right: 19px; }
+.menu .active { border-bottom: 3px solid #ed3e3d; }
+.menu li a:hover { border-bottom: 3px solid #ed3e3d; }
 
+header .wrapper {
+  padding-top: 29px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.menu li {
+  padding: 0px 12px;
+  text-transform: capitalize;  
+}
 
+.menu li a {
+  padding: 0px 8px 25px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
 
+.hamburger {
+  width: 35px;
+  height: 100%;
+  float: right;
+  position: relative;
+  display: none;
+}
 
+.hamburger span {
+  width: 35px;
+  height: 4px;
+  margin: 5px 0;
+  display: block;
+  background: #fff;
+  text-indent: -99999px;
+  transition:  0.5s ease;
+}
+
+/* nav:hover ul{
+  width: 100%;
+  display: block;
+  float: none;
+  position: absolute; 
+  top: 90%;
+  right: 0;
+  left: 0;
+  background-color: #269384;
+  text-align: center;
+} */
+.open .bar-two { display: none; }
+.open .bar-one { transform: rotate(45deg) translatex(7px); }
+.open .bar-three { transform: rotate(-45deg) translatex(7px); }
 
 /*=================================
   Header styling ends here

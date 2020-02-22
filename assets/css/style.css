@@ -185,30 +185,29 @@ header .wrapper {
 /*=================================
   products section styling starts here
 =================================*/
-h4::first-letter{ text-transform: uppercase; }
-.products .wrapper{ padding: 93px 0px; }
+h4::first-letter { text-transform: uppercase; }
+.products .wrapper { padding: 93px 0px; }
+.product-content div:first-child { margin-bottom: 20px; }
+.link { margin-top: 13px; }
 
 .heading {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
   padding-bottom: 12px;
+  border-bottom: 1px solid #ccc;
 }
 
 h3 {
   text-transform: capitalize;
   font-size: 30px;
+}
 
-}
-.link{
-  margin-top: 13px;
-}
 .link a{
+  position: relative;
   color: #ed3e3d;
   text-transform: uppercase;
   font-weight: 1000;
   font-size: 12px;
-  position: relative;
 }
 
 .link a::after{
@@ -224,10 +223,10 @@ h3 {
 }
 
 .all-products{
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 50px;
 }
 
 .all-products > li{ 
@@ -258,6 +257,7 @@ h4{
   color: #5397c9;
   font-weight: bold;
 }
+
 .product-content{
   padding: 32px;
   border: 1px solid #ccc;
@@ -265,22 +265,22 @@ h4{
 }
 
 .product-content p{
+  margin-bottom: 20px;
   color: #7c7c7c;
   font-size: 14px;
   line-height: 22px;
-  margin-bottom: 20px;
 }
+
 .product-content span{
   font-weight: bold;
   color: #232323;
 }
+
 .review{
   color: #ed3e3d;
   text-transform: capitalize;
   font-size: 12px;
 }
-.product-content div:first-child{ margin-bottom: 20px; }
-
 /*=================================
   products section styling ends here
 =================================*/

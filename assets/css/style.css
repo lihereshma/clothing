@@ -294,13 +294,13 @@ h4 {
 =================================*/
 .about-content p a { color: #468af9; }
 
-.about-content p{ margin-bottom: 20px; }
+.about-content p { margin-bottom: 20px; }
 
 .about-content p a::first-letter{ text-transform: uppercase; }
 
 .title-line { margin-bottom: 20px; }
 
-.about-content li:first-child{ width: 47%; }
+.about-content li:first-child { width: 47%; }
 
 .about-content {
   padding-bottom: 50px;
@@ -316,7 +316,7 @@ h4 {
   line-height: 22px;
 }
 
-.list li{
+.list li {
   margin-bottom: 15px;
   display: block;
   color: #7c7c7c;
@@ -324,7 +324,7 @@ h4 {
   list-style-type: square;
 }
 
-.red-button{
+.red-button {
   padding: 8px 16px;
   border-radius: 3px;
   text-transform: capitalize;
@@ -337,9 +337,9 @@ h4 {
 /*=================================
   purchase section styling starts here
 =================================*/
-.purchase h4 span{ font-weight: 1000; }
+.purchase h4 span { font-weight: 1000; }
 
-.purchase .wrapper{
+.purchase .wrapper {
   padding: 50px 0px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -353,12 +353,12 @@ h4 {
   background-color: #f7f7f7;
 }
 
-.purchase h4{
+.purchase h4 {
   color: #5397c9;
   text-transform: capitalize;
 }
 
-.purchase p{
+.purchase p {
   color: #7c7c7c;
   font-size: 14px;
   line-height: 22px;
@@ -373,13 +373,16 @@ h4 {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer a { color: #ed3e3d; }
 
+footer .wrapper { padding: 62px 0px; }
 
-
-
-
-
-
+footer {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #7c7c7c;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -389,15 +392,15 @@ h4 {
 @media only screen and (min-width: 1024px) {
   .menu li a:hover { border-bottom: 3px solid #ed3e3d; }
 
-  .link a:hover, .review:hover { color: #e69696; }
+  .link a:hover, .review:hover, footer a:hover { color: #e69696; }
 
-  .all-products li:hover{ box-shadow: 5px 10px 18px #888888; }
+  .all-products li:hover { box-shadow: 5px 10px 18px #888888; }
 
   .red-button:hover { background-color: #eb6666; }
 
-  .about-content p a:hover{color: #1d5abd;}
+  .about-content p a:hover {color: #1d5abd;}
 
-  .about img:hover{ box-shadow: 5px 5px #eb6666;; }
+  .about img:hover { box-shadow: 5px 5px #eb6666;; }
 
 }  
 /*media query for 995px starts here*/

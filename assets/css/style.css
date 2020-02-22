@@ -173,14 +173,33 @@ header .wrapper {
 /*=================================
   banner section styling starts here
 =================================*/
+.dots { display: none; }
 
+.banner .disable { display: none; }
 
+.banner figure { position: relative; }
 
+.banner .wrapper { 
+  width: 100%;
+  text-transform: uppercase;
+}
 
+.slide-content span {
+  color: #ed3e3d;
+  font-weight: 1000;
+}
 
+h2 {
+  font-size: 50px;
+  color: #fff;
+}
 
-
-
+.slide-content{
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  left: 25%;
+}
 /*=================================
   banner section styling ends here
 =================================*/

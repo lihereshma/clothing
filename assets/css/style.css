@@ -112,6 +112,8 @@ header { background-color: #232323; }
 
 .menu .active { border-bottom: 3px solid #ed3e3d; }
 
+.hamburger { display: none; }
+
 header .wrapper {
   padding-top: 29px;
   display: flex;
@@ -129,40 +131,6 @@ header .wrapper {
   font-size: 15px;
   font-weight: bold;
 }
-
-.hamburger {
-  width: 35px;
-  height: 100%;
-  float: right;
-  position: relative;
-  display: none;
-}
-
-.hamburger span {
-  width: 35px;
-  height: 4px;
-  margin: 5px 0;
-  display: block;
-  background: #fff;
-  text-indent: -99999px;
-  transition:  0.5s ease;
-}
-
-/* nav:hover ul{
-  width: 100%;
-  display: block;
-  float: none;
-  position: absolute; 
-  top: 90%;
-  right: 0;
-  left: 0;
-  background-color: #269384;
-  text-align: center;
-} */
-.open .bar-two { display: none; }
-.open .bar-one { transform: rotate(45deg) translatex(7px); }
-.open .bar-three { transform: rotate(-45deg) translatex(7px); }
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -177,11 +145,10 @@ header .wrapper {
 
 .banner .disable { display: none; }
 
-.banner figure { position: relative; }
-
 .banner .wrapper { 
   width: 100%;
   text-transform: uppercase;
+  position: relative;
 }
 
 .slide-content span {
@@ -190,15 +157,19 @@ header .wrapper {
 }
 
 h2 {
-  font-size: 50px;
   color: #fff;
+  font-size: 59px;
+  font-weight: bold;
+  margin-top: 17px;
 }
 
-.slide-content{
+.slide-content {
+  width: 100%;
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  left: 25%;
 }
 /*=================================
   banner section styling ends here
@@ -313,22 +284,30 @@ h4 {
 =================================*/
 .about-content p a { color: #468af9; }
 
-.about-content p { margin-bottom: 20px; }
+.about-content p { 
+  font-size: 14px;
+  margin-bottom: 20px; 
+}
 
 .about-content p a::first-letter{ text-transform: uppercase; }
 
-.title-line { margin-bottom: 20px; }
+.about-content li { width: 47%; }
 
-.about-content li:first-child { width: 47%; }
+.title-line { 
+  margin-bottom: 20px;
+  font-size: 17px;
+}
 
-.about-content {
+.about .red-button{
+  padding: 8px 20px;
+  margin-top: 13px;
+}
+
+.about-content  {
   padding-bottom: 50px;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
-}
-
-.about-content  {
   margin-bottom: 20px;
   color: #7c7c7c;
   font-size: 15px;
@@ -336,19 +315,20 @@ h4 {
 }
 
 .list li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   display: block;
   color: #7c7c7c;
-  font-size: 14px;
-  list-style-type: square;
+  font-size: 14px; 
 }
 
+/* .list{ list-style-type: disc !important; } */
+
 .red-button {
-  padding: 8px 16px;
   border-radius: 3px;
-  text-transform: capitalize;
   background-color: #ed3e3d;
   color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
 }
 /*=================================
   about section styling ends here
@@ -358,21 +338,27 @@ h4 {
 =================================*/
 .purchase h4 span { font-weight: 1000; }
 
+.purchase .red-button { padding: 12px 22px; }
+
+.purchase .button{ margin-top: 9px; }
+
 .purchase .wrapper {
-  padding: 50px 0px;
+  padding: 57px 0px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
 
 .purchase-content{
-  padding: 3%;
+  padding: 2.6%;
   border-radius: 3px;
+  margin: 0px 1.4%;
   display: flex;
   justify-content: space-between;
   background-color: #f7f7f7;
 }
 
 .purchase h4 {
+  margin-bottom: 13px;
   color: #5397c9;
   text-transform: capitalize;
 }
@@ -394,15 +380,17 @@ h4 {
 =================================*/ 
 footer a { color: #ed3e3d; }
 
-footer .wrapper { padding: 62px 0px; }
+footer .wrapper { 
+  padding: 62px 0px; 
+  font-size: 12.5px;
+}
 
 footer {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 12px;
   color: #7c7c7c;
+  text-align: center;
+  text-transform: uppercase;  
 }
- /*=================================
+/*=================================
   footer styling ends here
 =================================*/ 
 
@@ -420,10 +408,76 @@ footer {
   .about-content p a:hover {color: #1d5abd;}
 
   .about img:hover { box-shadow: 5px 5px #eb6666;; }
-}  
+} 
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
+  /*===  responsive header styling here  ===*/ 
+  header .wrapper {  padding-bottom: 29px; }
 
+  nav { display: none; }
 
-}  
+  .open .bar-two { display: none; }
+
+  .open .bar-one { transform: rotate(45deg) translatex(7px); }
+
+  .open .bar-three { transform: rotate(-45deg) translatex(7px); }
+
+  .hamburger {
+    width: 35px;
+    /* height: 100%; */
+    float: right;
+    position: relative;
+    display: block;
+  }
+
+  .hamburger span {
+    width: 35px;
+    height: 4px;
+    margin: 5px 0;
+    display: block;
+    background: #fff;
+    text-indent: -99999px;
+    transition:  0.5s ease;
+  }
+    
+  .menu-wrap:hover nav{
+    width: 100%;
+    display: block;
+    float: none;
+    position: absolute; 
+    top: 90%;
+    right: 0;
+    left: 0;
+    background-color: #269384;
+    text-align: center;
+  }
+  
+  /*===  responsive products styling here  ====*/
+  .all-products > li { width: 48%; }
+
+  /*===  responsive about styling here  ====*/ 
+  .about-content figure { margin-top: 30px; }
+
+  .about-content { display: block; }
+
+  .about-content li{
+    width: 100%;
+    display: block;
+  }
+
+  /*===  responsive purchase styling here  ====*/ 
+  .purchase-content { display: block;}
+
+}
+
+/*media query for 767px starts here*/
+@media only screen and (max-width: 767px) { 
+
+  /*===  responsive products styling here  ====*/ 
+  .all-products > li { width: 70%; }
+
+  .all-products { justify-content: center;}
+
+}

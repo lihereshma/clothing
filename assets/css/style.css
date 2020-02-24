@@ -143,12 +143,12 @@ header .wrapper {
 =================================*/
 .dots { display: none; }
 
-.banner .disable { display: none; }
+.slides { position: relative; }
 
 .banner .wrapper { 
   width: 100%;
   text-transform: uppercase;
-  position: relative;
+  /* position: relative; */
 }
 
 .slide-content span {
@@ -171,6 +171,9 @@ h2 {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.slick-dots { bottom: 40px; } 
+
 /*=================================
   banner section styling ends here
 =================================*/
@@ -407,7 +410,7 @@ footer {
 
   .about-content p a:hover {color: #1d5abd;}
 
-  .about img:hover { box-shadow: 5px 5px #eb6666;; }
+  .about img:hover { box-shadow: 5px 5px #eb6666; }
 } 
 
 /*media query for 995px starts here*/
@@ -416,7 +419,7 @@ footer {
   /*===  responsive header styling here  ===*/ 
   header .wrapper {  padding-bottom: 29px; }
 
-  nav { display: none; }
+  header{   position: relative; }
 
   .open .bar-two { display: none; }
 
@@ -424,9 +427,12 @@ footer {
 
   .open .bar-three { transform: rotate(-45deg) translatex(7px); }
 
+  .menu{ display: none; }
+
+  .menu li:hover{ background-color: #ed3e3d; }
+
   .hamburger {
     width: 35px;
-    /* height: 100%; */
     float: right;
     position: relative;
     display: block;
@@ -441,19 +447,37 @@ footer {
     text-indent: -99999px;
     transition:  0.5s ease;
   }
-    
-  .menu-wrap:hover nav{
-    width: 100%;
-    display: block;
-    float: none;
+
+  .menu{
+    width: 90%;
+    display: none;
     position: absolute; 
-    top: 90%;
-    right: 0;
-    left: 0;
-    background-color: #269384;
+    top: 100%;
+    right: 5%;
+    left: 5%;
+    background-color: #fff;
     text-align: center;
+    z-index: 1;
+    box-shadow: 5px 5px 18px #468af9;
   }
-  
+
+  .menu ul{
+    box-sizing: border-box;
+    padding: 2%;
+  }
+
+  .menu li{
+    display: block;
+    padding: 1%;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  .menu li a{
+    padding: 0;
+    color: #000;
+    font-weight: bold;
+  }
   /*===  responsive products styling here  ====*/
   .all-products > li { width: 48%; }
 
@@ -476,6 +500,9 @@ footer {
 @media only screen and (max-width: 767px) { 
   .all-products > li { width: 70%; }
 
-  .all-products { justify-content: center;}
+  .all-products { justify-content: center; }
 
+  .menu { top: 100%; }
+
+  nav li { font-size: 15px; }
 }

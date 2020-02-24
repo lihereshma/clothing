@@ -474,8 +474,6 @@ footer {
 
 /*media query for 767px starts here*/
 @media only screen and (max-width: 767px) { 
-
-  /*===  responsive products styling here  ====*/ 
   .all-products > li { width: 70%; }
 
   .all-products { justify-content: center;}
